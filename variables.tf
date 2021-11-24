@@ -193,3 +193,17 @@ variable "asg_capacity_provider_target_capacity" {
   type        = number
   default     = 100
 }
+
+variable "efs_id" {
+  type    = "string"
+  default = ""
+}
+
+variable "use_efs" {
+  default = false
+}
+
+variable "mount_dir" {
+  default     = "/mnt"
+  description = "Directory on EC2 where EFS will be mounted."
+}
