@@ -195,7 +195,6 @@ variable "asg_capacity_provider_target_capacity" {
 }
 
 variable "efs_id" {
-  type    = "string"
 }
 
 variable "use_efs" {
