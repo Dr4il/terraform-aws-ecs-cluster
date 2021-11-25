@@ -91,8 +91,8 @@ data "template_file" "efs_user_data" {
   template = "sudo mkdir -p $${mount_dir} && sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2 $${efs_id}.efs.$${aws_region}.amazonaws.com:/ $${mount_dir}"
 
   vars = {
-    efs_id     = "${var.efs_id}"
-    aws_region = "${var.aws_region}"
-    mount_dir  = "${var.mount_dir}"
+    efs_id     = var.efs_id
+    aws_region = var.aws_region
+    mount_dir  = var.mount_dir
   }
 }
