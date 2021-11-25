@@ -194,6 +194,10 @@ variable "asg_capacity_provider_target_capacity" {
   default     = 100
 }
 
+variable "aws_region" {
+  default = "us-west-1"
+}
+
 variable "efs_id" {
 }
 
