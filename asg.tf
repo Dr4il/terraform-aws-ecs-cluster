@@ -18,8 +18,10 @@ data "template_file" "cluster_user_data" {
   vars = {
     cluster_name = local.cluster_full_name
     efs_id     = var.efs_id
+    efs_id2     = var.efs_id2
     aws_region = var.aws_region
     mount_dir  = var.mount_dir
+    mount_dir2  = var.mount_dir2
   }
 }
 
