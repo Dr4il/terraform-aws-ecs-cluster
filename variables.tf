@@ -218,3 +218,8 @@ variable "mount_dir2" {
   default     = "/mnt/2"
   description = "Directory on EC2 where EFS will be mounted."
 }
+
+variable "mount_dir3" {
+  default     = "/mnt/3"
+  description = "Directory on EC2 where EFS will be mounted."
+}

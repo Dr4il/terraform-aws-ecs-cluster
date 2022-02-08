@@ -22,6 +22,8 @@ data "template_file" "cluster_user_data" {
     aws_region = var.aws_region
     mount_dir  = var.mount_dir
     mount_dir2  = var.mount_dir2
+    mount_dir3  = var.mount_dir3
+
   }
 }
 
