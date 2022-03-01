@@ -42,6 +42,11 @@ variable "cluster_instance_root_block_device_size" {
   type        = number
   default     = 30
 }
+
+variable "cluster_instance_root_block_device_encrypted" {}
+  type = boolean
+  default = true
+
 variable "cluster_instance_root_block_device_type" {
   description = "The type of the root block device on cluster instances ('standard', 'gp2', or 'io1')."
   type        = string
@@ -219,10 +224,10 @@ variable "mount_dir2" {
   description = "Directory on EC2 where EFS will be mounted."
 }
 
-// variable "efs_id3" {
-// }
+variable "efs_id3" {
+}
 
-// variable "mount_dir3" {
-//   default     = "/mnt/3"
-//   description = "Directory on EC2 where EFS will be mounted."
-// }
+variable "mount_dir3" {
+  default     = "/mnt/3"
+  description = "Directory on EC2 where EFS will be mounted."
+}

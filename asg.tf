@@ -22,6 +22,7 @@ data "template_file" "cluster_user_data" {
     aws_region = var.aws_region
     mount_dir  = var.mount_dir
     mount_dir2  = var.mount_dir2
+    mount_dir3  = var.mount_dir3
   }
 }
 
@@ -46,6 +47,7 @@ resource "aws_launch_configuration" "cluster" {
   root_block_device {
     volume_size = var.cluster_instance_root_block_device_size
     volume_type = var.cluster_instance_root_block_device_type
+    encrypted = var.cluster_instance_root_block_device_encrypted
   }
 
   lifecycle {

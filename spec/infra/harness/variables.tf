@@ -14,7 +14,6 @@ variable "cluster_instance_amis" {
   type = map(string)
 }
 variable "cluster_instance_root_block_device_size" {}
-
 variable "cluster_minimum_size" {}
 variable "cluster_maximum_size" {}
 variable "cluster_desired_capacity" {}
