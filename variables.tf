@@ -44,8 +44,8 @@ variable "cluster_instance_root_block_device_size" {
 }
 
 variable "cluster_instance_root_block_device_encrypted" {}
-  type = boolean
-  default = true
+  type = string
+  default = "true"
 
 variable "cluster_instance_root_block_device_type" {
   description = "The type of the root block device on cluster instances ('standard', 'gp2', or 'io1')."
